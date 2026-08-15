@@ -13,8 +13,9 @@ Every 4 hours, the workflow:
 5. **Creates a new Google Doc** per job with the tailored resume, and **logs the job details + resume link** in a Google Sheets tracker for easy follow-up.
 
 ## Architecture
-
+![Workflow diagram](workflow-diagram.png)
 ```
+ 
 Schedule Trigger (every 4h)
    → Set LinkedIn search URL
    → Apify: Scrape LinkedIn Jobs
